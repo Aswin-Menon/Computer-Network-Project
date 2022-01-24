@@ -44,18 +44,18 @@ public class client
 			
         // keep reading until 5 is input
         while (!line.equals("Over"))
-        {		System.out.println("\n1.Create\n2.Edit\n3.Delete\n4.View\n5.Exit\nEnter choice: ");
+        {   System.out.println("\n1.Create\n2.Edit\n3.Delete\n4.View\n5.Exit\nEnter choice: ");
             ch = sc.nextInt();
             switch(ch)
             {	
                 case 1:
-					try
+		   try
                     {
                         out.writeUTF("cf");
                         System.out.print("\nEnter file name to be created: ");
                         name= sc.next();
                         out.writeUTF(name);
-						System.out.print("File creation...");
+			System.out.print("File creation...");
 						
                     }
                     catch(IOException i)
@@ -91,7 +91,7 @@ public class client
                         System.out.print("\nEnter file name: ");
                         name= sc.next();
                         out.writeUTF(name);
-						System.out.print("File deletion...");
+			System.out.print("File deletion...");
                     }
                     catch(IOException i)
                     {
@@ -105,7 +105,7 @@ public class client
                         System.out.print("\nEnter file name: ");
                         name= sc.next();
                         out.writeUTF(name);
-						System.out.print("Displaying contents of file");
+			System.out.print("Displaying contents of file");
                     }
                     catch(IOException i)
                     {
@@ -115,7 +115,7 @@ public class client
                 case 5:line="Over";
                     try
                     {   
-						System.out.print("Exiting and closing connection... ");
+			System.out.print("Exiting and closing connection... ");
                         out.writeUTF(line);
                     }
                     catch(IOException i)
