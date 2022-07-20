@@ -1,5 +1,5 @@
-# Computer-Network-Project
-By Alan Jose(14), Aswin Menon(38) , Bivin C Benny(46)
+# Java-dbms-project
+By,Aswin Menon(38) 
 
 client.java contains code for client,
 server.java contains code for server
